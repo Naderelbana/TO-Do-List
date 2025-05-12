@@ -10,7 +10,7 @@ if(localStorage.getItem("allItems")){
 }
 
 function addItem(){
-    if(userInput.value= ""){
+    if(userInput.value){
         items.push(userInput.value);
         userInput.value= "";
         localStorage.setItem("allItems",JSON.stringify(items))
